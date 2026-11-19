@@ -1,0 +1,48 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ovos-skill-common-reading-example"
+version = "0.2.0a1"
+description = "Template/example provider for ovos-common-reading-pipeline-plugin. Copy and adapt - not meant to be installed for its own content."
+readme = "README.md"
+license = {text = "Apache-2.0"}
+authors = [{name = "Andreas Lorensen"}]
+requires-python = ">=3.10"
+keywords = ["ovos", "openvoiceos", "skill", "voice", "assistant", "template", "example", "provider", "emkay"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "License :: OSI Approved :: Apache Software License",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Topic :: Multimedia :: Sound/Audio :: Speech",
+    "Topic :: Home Automation",
+]
+dependencies = [
+    "ovos-workshop>=0.0.15,<10.0.0",
+    "requests",
+    "bs4",
+    "ovos-plugin-manager",
+]
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[project.urls]
+Homepage = "https://github.com/emkay-voice/ovos-skill-common-reading-example"
+Issues = "https://github.com/emkay-voice/ovos-skill-common-reading-example/issues"
+Emkay = "https://github.com/emkay-voice/emkay"
+Icon = "https://raw.githubusercontent.com/emkay-voice/ovos-skill-common-reading-example/main/story-512.png"
+
+[project.entry-points."opm.skill"]
+"ovos-skill-common-reading-example.emkay-voice" = "ovos_skill_common_reading_example:CommonReadingExample"
+
+[tool.setuptools]
+packages = ["ovos_skill_common_reading_example"]
+
+[tool.setuptools.package-dir]
+ovos_skill_common_reading_example = ""
+
+[tool.setuptools.package-data]
+ovos_skill_common_reading_example = ["locale/**/*", "*.png"]

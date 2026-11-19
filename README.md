@@ -4,7 +4,10 @@ A **template**, not a product. Copy this repo and adapt it to build your
 own provider skill for
 [ovos-common-reading-pipeline-plugin](https://github.com/andlo/ovos-common-reading-pipeline-plugin).
 
-[![Tests](https://github.com/andlo/ovos-skill-common-reading-example/actions/workflows/test.yml/badge.svg)](https://github.com/andlo/ovos-skill-common-reading-example/actions/workflows/test.yml)
+It is part of [Emkay](https://github.com/emkay-voice/emkay), OpenVoiceOS in
+the browser, and works on any [OpenVoiceOS](https://openvoiceos.org).
+
+[![Build](https://github.com/emkay-voice/ovos-skill-common-reading-example/actions/workflows/publish.yml/badge.svg)](https://github.com/emkay-voice/ovos-skill-common-reading-example/actions/workflows/publish.yml)
 
 > This skill is fully functional (it really does read the OpenVoiceOS
 > blog aloud if you install it) so that every pattern shown here is
